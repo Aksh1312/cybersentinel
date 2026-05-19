@@ -29,40 +29,6 @@ An AI-powered cybersecurity system that detects network intrusions using a **Ran
 
 ---
 
-## 🏗️ Project Structure
-cybersentinel/
-│
-├── main.py # Entry point - run full pipeline
-├── requirements.txt # Dependencies
-├── README.md # Documentation
-│
-├── core/
-│ ├── init.py
-│ └── real_data_loader.py # Data loading & preprocessing
-│ • load_unsw_data() # Load CSV files
-│ • OptimizedPreprocessor # Encoding, scaling, feature selection
-│
-├── models/
-│ ├── init.py
-│ └── ensemble_model.py # ML model with hyperparameter tuning
-│ • OptimizedEnsemble # Train, tune, predict
-│
-├── engine/
-│ ├── init.py
-│ └── evaluator.py # Evaluation & reporting
-│ • ModelEvaluator # Metrics, confusion matrix, reports
-│
-├── dashboard/
-│ ├── init.py
-│ └── app.py # Streamlit SOC dashboard
-│ • Performance gauges # Interactive metric visualization
-│ • Attack analysis # Distribution & detection stats
-│ • Data explorer # Raw data & feature inspection
-│ • Resume summary # Copy-paste ready results
-└── data/ # Dataset directory
-├── UNSW_NB15_training-set.csv # 175,341 records
-└── UNSW_NB15_testing-set.csv # 82,332 records
-
 ## 🔧 Tech Stack
 
 | Category | Technology |
@@ -118,7 +84,7 @@ bash
 streamlit run dashboard/app.py
 The dashboard will open at http://localhost:8501
 
-📈 Pipeline Details
+Pipeline Details
 Data Preprocessing
 Step	Description	Result
 1. Load	Read CSV files	175K train, 82K test records
